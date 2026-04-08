@@ -19,5 +19,6 @@ jobs:
           script: |
             cd /opt/mobiweb-n8n
             git pull origin main
+            docker compose pull
             docker compose build --no-cache
             docker compose up -d
